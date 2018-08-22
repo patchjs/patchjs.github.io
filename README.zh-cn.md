@@ -1,17 +1,17 @@
-## Key Future
+## 核心能力
 
-* simple and easy to use API, like LABjs.
+* 简单易用的 API
 
-* support localStorage / Web SQL Database / IndexedDB.
+* 支持多种存储方式，例如：localStorage、Web SQL Database、IndexedDB
 
-* real time diff compute through nginx.
+* 通过 Nginx Module 实时计算两个版本之间的 Diff 文件
 
-* build diff compute through webpack.
+* 通过 Webpack Plugin 构建生产两个版本之间的 Diff 文件
 
 
-## Loader
+## 加载器
 
-### Reference
+### 引用文件
 
 ```html
 <script src="./patchjs-loader/2.0.0/websqldb.js"></script>
@@ -31,7 +31,7 @@ patchjs.config({
 });
 ```
 
-[More](https://github.com/patchjs/patchjs-loader)
+[更多](https://github.com/patchjs/patchjs-loader)
 
 ### Service Worker
 
@@ -47,10 +47,10 @@ sw.config({
 }).run();
 ```
 
-[More](https://github.com/patchjs/patchjs-sw)
+[更多](https://github.com/patchjs/patchjs-sw)
 
 
-## Nginx Configure
+## Nginx 配置
 
 ```bash
 location /static/ {
@@ -59,10 +59,10 @@ location /static/ {
 }
 ```
 
-[More](https://github.com/patchjs/patchjs-nginx-module)
+[更多](https://github.com/patchjs/patchjs-nginx-module)
 
 
-## Webpack Configure
+## Webpack 配置
 
 ```js
 var PatchjsWebpackPlugin = require('patchjs-webpack-plugin');
@@ -77,11 +77,9 @@ module.exports = {
 };
 ```
 
-[More](https://github.com/patchjs/patchjs-webpack-plugin)
+[更多](https://github.com/patchjs/patchjs-webpack-plugin)
 
-## Support & Contact
-
-* email: yulong.heli@gmail.com
+## 问题反馈
 
 * issue: https://github.com/patchjs/patchjs-loader/issues
 
